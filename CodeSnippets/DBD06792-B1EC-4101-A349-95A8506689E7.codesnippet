@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>diskey</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTapGestureCaptured:)];
+    [&lt;#view#&gt; addGestureRecognizer:singleTap];
+}
+
+
+- (void)singleTapGestureCaptured:(UITapGestureRecognizer *)gesture
+{
+    //Get touch point
+    CGPoint touchPoint=[gesture locationInView:&lt;#view#&gt;];
+    
+    //Hide keyBoard
+    [&lt;#view#&gt; endEditing:YES];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>DBD06792-B1EC-4101-A349-95A8506689E7</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>allows to dismiss keyboard from any view</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Tap Recognizer (Superview)</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

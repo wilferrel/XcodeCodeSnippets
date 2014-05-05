@@ -2,33 +2,21 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>singleton</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (id)sharedInstance{
-    static &lt;#Classname#&gt; *sharedInstance = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&amp;onceToken, ^{
-        sharedInstance = [[self alloc] init];
-    });
-    return sharedInstance;
-}
-- (id)init {
-    if (self = [super init]) {
-        
-    }
-    return self;
-}</string>
+	<string>UINavigationController *ref = (UINavigationController *)[[[&lt;#appdelegate#&gt; instance] window] rootViewController];
+[ref.visibleViewController presentViewController:&lt;#viewController#&gt; animated:YES completion:nil];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>AA99C1D0-1E08-4FA2-8949-05E59A2EAC62</string>
+	<string>69B5BF89-00BA-4E87-A5D9-8E97405EAA9B</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Gets the visibleViewController</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>CreateSingleton</string>
+	<string>Present ViewController from Anywhere</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

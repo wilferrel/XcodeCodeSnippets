@@ -3,32 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>singleton</string>
+	<string>IsEmpty</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (id)sharedInstance{
-    static &lt;#Classname#&gt; *sharedInstance = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&amp;onceToken, ^{
-        sharedInstance = [[self alloc] init];
-    });
-    return sharedInstance;
-}
-- (id)init {
-    if (self = [super init]) {
-        
-    }
-    return self;
+	<string>static inline BOOL IsEmpty(id thing) {
+    return thing == nil
+    || ([thing respondsToSelector:@selector(length)]
+        &amp;&amp; [(NSData *)thing length] == 0)
+    || ([thing respondsToSelector:@selector(count)]
+        &amp;&amp; [(NSArray *)thing count] == 0);
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>AA99C1D0-1E08-4FA2-8949-05E59A2EAC62</string>
+	<string>6BDD83AF-231E-431B-9EA7-38B43379FE49</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>check for object if empty</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>CreateSingleton</string>
+	<string>IsEmpty Helper</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

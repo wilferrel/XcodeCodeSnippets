@@ -3,20 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>rrr</string>
+	<string>reloadtable</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (retain, nonatomic) &lt;#type#&gt; *&lt;#name#&gt;;
-</string>
+	<string>[&lt;#tableName#&gt; reloadRowsAtIndexPaths:[&lt;#tableName#&gt; indexPathsForVisibleRows]
+                             withRowAnimation:UITableViewRowAnimationNone];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>3D77C3FA-E74C-464E-8EFE-256C08AC7E35</string>
+	<string>2DE0BAF3-6937-4528-B082-B7572F9B3B56</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Correctly reload table</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Create retain property</string>
+	<string>Reload Table</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

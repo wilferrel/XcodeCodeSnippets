@@ -3,20 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>rrr</string>
+	<string>ifkey</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (retain, nonatomic) &lt;#type#&gt; *&lt;#name#&gt;;
-</string>
+	<string>if([&lt;#Dictionary#&gt; objectforKey:&lt;#node name#&gt;]){
+        
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>3D77C3FA-E74C-464E-8EFE-256C08AC7E35</string>
+	<string>D40FA8FF-E312-40EC-A40D-A297A88FCA78</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Checks if Key Exists in Dictionary</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Create retain property</string>
+	<string>If Key Exists</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

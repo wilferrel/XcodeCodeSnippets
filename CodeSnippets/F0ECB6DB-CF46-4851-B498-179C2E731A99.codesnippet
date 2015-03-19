@@ -2,21 +2,22 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>rrr</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (strong, nonatomic) &lt;#type#&gt; *&lt;#name#&gt;;
-</string>
+	<string>typedef enum {
+    kCircle,
+    kRectangle,
+    kOblateSpheroid
+} ShapeType;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>3D77C3FA-E74C-464E-8EFE-256C08AC7E35</string>
+	<string>F0ECB6DB-CF46-4851-B498-179C2E731A99</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Create retain property</string>
+	<string>Typedef Enum Options</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
